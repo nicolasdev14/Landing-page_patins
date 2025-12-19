@@ -4,20 +4,25 @@ section.hero {
     padding: 2.5rem 2rem;
     margin-inline: auto;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
     & h1 {
         max-width: 40rem;
     }
 
     & h1 div {
         display: inline-block;
-        /* border: 1px solid lime; */
         overflow: hidden;
         height: 5rem;
         width: min-content;
         vertical-align: bottom;
     }
 
-    & h1 span:nth-child(1), span:nth-child(4) {
+    & h1 span:nth-child(1),
+    & h1 span:nth-child(4) {
         color: var(--snitap-sky-mid);
     }
 
@@ -30,15 +35,62 @@ section.hero {
     }
 
     & h1 span {
-        /* border: 1px solid red; */
         display: block;
-        animation: slideUp 6s infinite ease;
+
+        animation: slideUp 5s 2s infinite ease;
+    }
+
+    /* buttons */
+    & .buttons {
+        display: flex;
+        gap: 2rem;
+        margin-top: 3rem;
+
+
+        & .button {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+
+            /* background-color: gray; */
+            border-radius: 5rem;
+
+            transition: scale 350ms;
+
+            &.buy {
+                padding: 1.5rem 3rem;
+                background-color: var(--snitap-sun);
+            }
+
+            &.play span {
+                padding: 1.5rem;
+                border-radius: 50%;
+                background-color: white;    
+                display: flex;
+            }
+
+            &:hover {
+                scale: 1.1;
+            }
+        }
+
+
+        & .shadow {
+            box-shadow: 
+            0 2px 5px rgb(0 0 0 / .1),
+            0 9px 9px rgb(0 0 0 / .09),
+            0 20px 12px rgb(0 0 0 / .05),
+            0 36px 15px rgb(0 0 0 / .01)
+            ;
+        }
     }
 }
 
 
 @keyframes slideUp {
-    0%, 22% {
+
+    0%,
+    22% {
         transform: translateY(0);
     }
 
@@ -59,7 +111,8 @@ section.hero {
     }
 
     /* divertida static */
-    33%, 55% {
+    33%,
+    55% {
         transform: translateY(-5rem);
     }
 
@@ -78,10 +131,11 @@ section.hero {
     62% {
         transform: translateY(calc(-10rem + 5px));
     }
-    
+
 
     /* saudável static */
-    66%, 88% {
+    66%,
+    88% {
         transform: translateY(-10rem);
     }
 
@@ -122,7 +176,7 @@ section.hero {
     }
 }
 
-@media (width >= 100em ) {
+@media (width=120em) {
     header {
         max-width: 120em;
     }
@@ -131,4 +185,3 @@ section.hero {
         padding: 2rem;
     }
 }
-
