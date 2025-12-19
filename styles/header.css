@@ -1,6 +1,7 @@
 header {
     max-width: 22.5rem;
     padding: 0.75rem 2rem;
+    margin-inline: auto;
 
     justify-content: space-between;
 
@@ -36,6 +37,7 @@ header {
         border-radius: 50%;
 
         justify-content: center;
+        display: flex;
     }
 }
 
@@ -47,4 +49,4 @@ header {
     }
 }
 
-/* Parei no 7:13 Adicionando o Header */
+

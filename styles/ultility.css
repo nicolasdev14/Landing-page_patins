@@ -1,7 +1,12 @@
-.flex {
-    display: flex;
-}
-
 .items-center {
     align-items: center;
 }
+
+.container {
+    display: flex;
+}
+
+.px-lg {
+    padding-inline: 1.5rem;
+}
+
