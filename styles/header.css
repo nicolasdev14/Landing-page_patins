@@ -1,4 +1,4 @@
-header {
+header.top {
     display: flex;
     align-items: center;
     max-width: 22.5rem;
@@ -46,14 +46,14 @@ header {
 
 
 @media (width >= 80em) {
-    header {
+    header.top {
         max-width: 80em;
         padding: 1.25rem 2rem;
     }
 }
 
 @media (width = 120em) {
-    header {
+    header.top {
         max-width: 120em;
     }
 }

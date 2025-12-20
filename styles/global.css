@@ -18,7 +18,7 @@
 
     --ff-base: "Montserrat", sans-serif;
 
-    --text-sm: 0.875rem;
+    --text-sm: 0.75rem;
     --text-base: 1rem;
     --text-lg: 2.5rem;
     --text-xl: 2rem;
@@ -56,6 +56,6 @@ a {
 @media (width >= 80em) {
     :root {
         --text-xl: 4rem;
+        --text-sm: 0.875rem;
     }
-
 }
