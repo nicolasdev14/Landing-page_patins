@@ -1,4 +1,4 @@
-##🌎 Projeto de Viagens | Rocketseat
+##🌎 Projeto lp de patins animada | Rocketseat
 ![Descrição da Imagem](assets/images/projeto1.png)
 ![Descrição da Imagem](assets/images/projeto2.png)
 ## 📝 Sobre o Projeto
